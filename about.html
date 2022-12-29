@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users API | About</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="user-api.css">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><i class="bi bi-house"></i></a>
+        <a href="about.html" class="active">about</a>
+        <a href="http://localhost:3000/users" target="_blank">api</a>
+    </nav>
+
+    <div class="about-wrapper">
+        <div>
+            <div class="about-container">
+                <span class="about-heading">Users API</span>
+
+                <p>This is a simple mock users API intended for front end develeopers like myself
+                    who would need mock users for your projects. You can interct with with this data using <strong>GET</strong>, <strong>POST</strong>,
+                    <strong>PUT</strong>, <strong>PATCH</strong>, and <strong>DELETE</strong>. Please note there is no database for this API so your <strong>POST</strong>, 
+                    <strong>PUT</strong>, <strong>PATCH</strong>  
+                    and <strong>DELETE</strong> will not be saved.
+                </p>
+
+                <p>
+                    As an example you can interact with the api with all the data:<br>
+                    <pre>
+                        <code>
+                            fetch('https://users-api.github.com/users')
+                                .then(res => {
+                                    return res.json();
+                                })
+                                .then(data => {
+                                    /* Your code here */
+                                })
+                        </code>
+                    </pre>
+                    
+                    Or with a specific user's data:
+                    <pre>
+                        <code>
+                            fetch('https://users-api.github.com/users/5')
+                                .then(res => {
+                                    return res.json();
+                                })
+                                .then(data => {
+                                    /* Your Code here */
+                                })
+                        </code>
+                    </pre>
+                </p>
+                <p>I've displayed all the users indivually on the <a href="index.html">home page</a> if you would like to 
+                interact with one or many specific users.The users Id's start from <strong>001</strong> as shown on the user card so if you're
+                looking to interact with the first user with the id of <strong>001</strong> the user would be <strong>0</strong>, the second user with an Id of <strong>002</strong> would be 
+                <strong>1</strong> and so on</p>
+
+            </div>
+
+            <div class="about-container">
+                <span class="about-heading">Photo Credits</span>
+                <ul>
+                    <li>
+                        <a href="https://unsplash.com/@michaeldam?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Dam</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@miracletwentyone?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joseph Gonzalez</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@vinceveras?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vince Veras</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@benjeeeman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ben den Engelsen</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@heftiba?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Toa Heftiba</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@juricakoletic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jurica Koletić</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@maygauthier?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">May Gauthier</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@chrisjoelcampbell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christopher Campbell</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@maygauthier?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">May Gauthier</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@armedshutter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ayo Ogunseinde</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@maygauthier?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">May Gauthier</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/ja/@everythingcaptured?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Edward Cisneros</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@luisviol?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luis Villasmil</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@giancescon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gian Cescon</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@matheusferrero?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Matheus Ferrero</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@podpros?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">PodPros</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/it/@zoeaureliaa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zoe Fernandez</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@kimsondoan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kimson Doan</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@mustafa_omar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mustafa Omar</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@ryutarouozumi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ryutaro Uozumi</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@ryutarouozumi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ryutaro Uozumi</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@luisviol?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luis Villasmil</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@midashofstra?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Midas Hofstra</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@leio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Leio McLaren</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/fr/@princessolan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">princess</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@lolygalina?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">loly galina</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@sigmund?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sigmund</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@dsquared43?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Derick Daily</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@eugabrielsilverio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gabriel Silvério</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@nextfnlevel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lawrence Crayton</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@aniitonishvili?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ana Itonishvili</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@tevintrinh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tevin Trinh</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@aatiktasneem?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aatik Tasneem</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@bavepictures?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bave Pictures</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@jo_bebop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jo Bebop</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/es/@josealjovin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">jose aljovin</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@blrguillaume?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Guillaume Bleyer</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@yusronell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yusron El Jihan</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@gift_habeshaw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gift Habeshaw</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@olianayda?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olga Nayda</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@davidtoddmccarty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Todd McCarty</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@mr_karangia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sandip Karangiya</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@ialexavalos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alex Avalos</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@shobiz_photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shoaib Bhatti</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@olianayda?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olga Nayda</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@thethinblackframe?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Clarke</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@anil_sharma_india?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Anil Sharma</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@jekafe?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jessica Felicio</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@yusronell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yusron El Jihan</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@mcbrew_qwer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Qwerqu McBrew</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@yungbender?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yung Bender</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@realabhishekrai?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Abhishek Rai</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@facu_two?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Facundo Aranda</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@lera_s_book_photo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Valeriya Soskovets</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>Designed and Developed by &nbsp;&copy;&nbsp; <a href="https://www.prettypandey.dev" target="_blank"><span style="font-weight: 600;">Pretty Pandey</span></a> &nbsp;<span>2022</span></p>
+    </footer>
+</body>
+</html>

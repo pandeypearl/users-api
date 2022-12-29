@@ -1,0 +1,24 @@
+{
+  "name": "users-api",
+  "version": "1.0.0",
+  "description": "simple open source api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/pandeypearl/users-api.git"
+  },
+  "author": "Pretty Pandey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pandeypearl/users-api/issues"
+  },
+  "homepage": "https://github.com/pandeypearl/users-api#readme",
+  "dependencies": {
+    "JSON": "^1.0.0",
+    "json-server": "^0.17.1"
+  }
+}

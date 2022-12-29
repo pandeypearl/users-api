@@ -1,0 +1,210 @@
+
+.user-wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;    
+    margin: 100px auto;
+}
+
+.user-container{
+    width: 80%;
+}
+
+.filering{
+    margin-bottom: 50px;
+}
+
+.filtering .heading{
+    color: var(--pale-cerulean);
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+#userCards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 50px 0;
+}
+
+.user-card{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.user-card span{
+    display: block;
+}
+
+.user-id{
+    text-align: right;
+    color: var(--pale-cerulean);
+}
+
+.profile-image{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name{
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.username{
+    font-size: 0.8rem;
+    color: var(--pale-cerulean);
+    font-weight: 600;
+}
+
+.occupation{
+    font-weight: 600;
+    font-size: 1rem;
+    font-size: 0.8rem;
+}
+
+.email{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--pale-cerulean);
+}
+
+.bio{
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.raw-data{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    padding: 20px;
+    font-size: 0.8rem;
+    background-color: var(--pale-cerulean);
+    color: var(--alice-blue);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.raw-data::before{
+    content: "";
+    display: block;
+    transition: 0.7s;
+}
+.slide-in{
+    opacity: 0;
+    height: 0px;
+    width: 1px;
+    transition: all 0.5s ease;
+}
+
+.slide-in.show{
+    opacity: 1;
+    height: 350px;
+    width: 250px;
+}
+
+.website{
+    font-size: 0.8rem;
+    color: var(--pale-cerulean);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.user-card:hover > .raw-data{
+    display: block;
+    transform-style: preserve-3d;
+    animation: slideInAnimation linear 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes slideInAnimation{
+    from{
+        margin-bottom: 90%;
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        margin-bottom: 0%;
+        width: 250px;
+        opacity: 1;
+    }
+}
+
+.raw-data ul li{
+    margin-bottom: 5px;
+}
+
+.raw-data ul li span{
+    display: inline-block;
+}
+
+.raw-data ul li .desc{
+    font-weight: 800;
+    padding-right: 5px;
+}
+
+/* ABOUT PAGE */
+.about-wrapper{
+    margin: 100px 0;
+}
+
+.about-wrapper div{
+    width : 80%;
+    margin: auto;
+}
+
+.about-wrapper div .about-heading{
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: var(--pale-cerulean);
+}
+
+.about-wrapper ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    font-size: 0.8rem;
+}
+
+.about-wrapper ul li a:first-child{
+    font-weight: 600;
+}
+
+.about-wrapper ul li a:last-child{
+    font-weight: 200;
+}
+
+.about-container{
+    padding-bottom: 100px;
+}
+
+.about-container p{
+    font-weight: 200;
+}
+
+pre{
+    background-color: var(--pale-cerulean);
+    color: white;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px){
+    #userCards{
+        gap: 20px;
+        margin: 20px 0;
+    }
+}
