@@ -1,5 +1,5 @@
 /** Getting Data from the API */
-fetch('https://pandeypearl.github.io/users-api/users-db.json/users')
+fetch('http://localhost:3000/users')
     .then(res => {
         return res.json();
     })
