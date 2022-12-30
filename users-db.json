@@ -8,7 +8,7 @@
             "date_of_birth": "01-01-1990",
             "gender": "Male",
             "full_name": "Pratik Tasneem",
-            "profile_image": "img/pratik-tasneem.webp",
+            "profile_image": "https://users-api-mexb.onrender.com/img/pratik-tasneem.webp",
             "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus deserunt explicabo at magni fuga placeat, id exercitationem animi temporibus totam. Eveniet, voluptate asperiores. Commodi sequi sit, porro sed suscipit ad.",
             "occupation": "Finacial Analyst",
             "cover_image": "",
