@@ -1,5 +1,5 @@
 /** Getting Data from the API */
-fetch('http://localhost:3000/users')
+fetch('https://users-api-mexb.onrender.com/users')
     .then(res => {
         return res.json();
     })
